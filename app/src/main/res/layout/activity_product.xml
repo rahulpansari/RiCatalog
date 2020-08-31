@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<include android:id="@+id/toolbarlayout"
+    layout="@layout/main_toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProductActivity">
+
+    <include
+        layout="@layout/shimmer_products"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
+</LinearLayout>

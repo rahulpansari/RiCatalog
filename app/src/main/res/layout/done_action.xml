@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="?attr/actionButtonStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:id="@+id/doneaction"
+        app:tint="@color/whitecolor"
+        android:src="@drawable/done"/>
+    <ProgressBar
+        android:id="@+id/signupprogress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/whitecolor"
+        app:layout_constraintBottom_toTopOf="@+id/signupsignin"
+        app:layout_constraintEnd_toEndOf="@+id/signupbttn"
+        app:layout_constraintStart_toStartOf="@+id/signupbttn" />
+
+</FrameLayout>

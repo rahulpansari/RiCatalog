@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_margin="5dp"
+        android:clipToPadding="false"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cartimage"
+                android:layout_width="133dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:text="tile"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/titles"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/titles"
+                app:layout_constraintTop_toTopOf="@+id/titles" />
+
+            <TextView
+                android:id="@+id/titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Price Code:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/cartimage"
+                app:layout_constraintTop_toTopOf="@+id/cartimage" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="tile"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/titlesf"
+                app:layout_constraintEnd_toEndOf="@+id/title"
+                app:layout_constraintStart_toStartOf="@+id/title"
+                app:layout_constraintTop_toTopOf="@+id/titlesf" />
+
+            <TextView
+                android:id="@+id/titlesf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Code:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/titles"
+                app:layout_constraintTop_toBottomOf="@+id/titles" />
+
+            <TextView
+                android:id="@+id/titlesd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Quantity:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/titlesf"
+                app:layout_constraintTop_toBottomOf="@+id/titlesf" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_button"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/titlesd"
+                app:layout_constraintEnd_toEndOf="@+id/code"
+                app:layout_constraintHorizontal_bias="0.537"
+                app:layout_constraintStart_toStartOf="@+id/code"
+                app:layout_constraintTop_toTopOf="@+id/titlesd">
+
+                <TextView
+                    android:id="@+id/decreaseqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/increaseqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titlesff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Color:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/titlesd"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="tile"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/titlesff"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/titxbxfles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Polish:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/titlesff"
+                app:layout_constraintTop_toBottomOf="@+id/titlesff" />
+
+            <TextView
+                android:id="@+id/polish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="tile"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/titxbxfles"
+                app:layout_constraintEnd_toEndOf="@+id/color"
+                app:layout_constraintStart_toStartOf="@+id/color"
+                app:layout_constraintTop_toBottomOf="@+id/titlesff" />
+
+            <ImageView
+                android:id="@+id/deleteitem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/deleteitem"
+                app:layout_constraintEnd_toEndOf="@+id/cartimage"
+                app:layout_constraintStart_toStartOf="@+id/cartimage"
+                app:layout_constraintTop_toBottomOf="@+id/cartimage"
+                tools:srcCompat="@drawable/deleteitem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

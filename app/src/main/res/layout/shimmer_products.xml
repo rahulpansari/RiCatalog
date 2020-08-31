@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmer_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cc1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <View
+                android:id="@+id/cardimg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="2dp"
+                android:background="@color/lightgray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/code"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cardimg"
+                app:layout_constraintTop_toBottomOf="@+id/cardimg" />
+    <View
+        android:id="@+id/color"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardimg"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+    />
+
+    <View
+        android:id="@+id/polish"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardimg"
+        app:layout_constraintTop_toBottomOf="@+id/color" />
+    />
+    <View
+        android:id="@+id/quantity"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardimg"
+        app:layout_constraintTop_toBottomOf="@+id/polish" />
+    />
+    <View
+        android:id="@+id/pricecode"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardimg"
+        app:layout_constraintTop_toBottomOf="@+id/quantity" />
+    />
+
+    <View
+        android:id="@+id/addcartbttn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@color/lightgray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricecode" />
+
+            <ImageButton
+                android:id="@+id/zoomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:tint="@color/whitecolor"
+                app:srcCompat="@drawable/zoomicon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <View
+            android:id="@+id/cardimg2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="2dp"
+            android:background="@color/lightgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/code2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/lightgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardimg2"
+            app:layout_constraintTop_toBottomOf="@+id/cardimg2" />
+        <View
+            android:id="@+id/color2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/lightgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardimg2"
+            app:layout_constraintTop_toBottomOf="@+id/code2" />
+        />
+
+        <View
+            android:id="@+id/polish2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/lightgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardimg2"
+            app:layout_constraintTop_toBottomOf="@+id/color2" />
+        />
+        <View
+            android:id="@+id/quantity2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/lightgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardimg2"
+            app:layout_constraintTop_toBottomOf="@+id/polish2" />
+        />
+        <View
+            android:id="@+id/pricecode2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/lightgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cardimg2"
+            app:layout_constraintTop_toBottomOf="@+id/quantity2" />
+        />
+
+        <View
+            android:id="@+id/addcartbttn2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@color/lightgray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pricecode2" />
+
+        <ImageButton
+            android:id="@+id/zoomButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tint="@color/whitecolor"
+            app:srcCompat="@drawable/zoomicon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

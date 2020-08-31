@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/whitecolor"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/cardimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_margin="2dp"
+                    android:scaleType="center"
+                    android:src="@drawable/rilogo" />
+
+                <ImageView
+                    android:id="@+id/zoomButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/zoomicon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/zoomicon"
+                    app:tint="@color/whitecolor" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/pricecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR -AD"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frm"
+                app:layout_constraintTop_toBottomOf="@+id/frm" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR -AD"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frm"
+                app:layout_constraintTop_toBottomOf="@+id/pricecode" />
+
+            <!--    <TextView
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR -AD"
+                android:textColor="@color/coloryellowbuttontextfield"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frm"
+                app:layout_constraintTop_toBottomOf="@+id/code" />
+
+            <TextView
+                android:id="@+id/polish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR -AD"
+                android:textColor="@color/coloryellowbuttontextfield"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frm"
+                app:layout_constraintTop_toBottomOf="@+id/color" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR -AD"
+                android:textColor="@color/coloryellowbuttontextfield"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frm"
+                app:layout_constraintTop_toBottomOf="@+id/polish" />
+
+            <TextView
+                android:id="@+id/pricecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLOR -AD"
+                android:textColor="@color/coloryellowbuttontextfield"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/frm"
+                app:layout_constraintTop_toBottomOf="@+id/quantity" />
+-->
+            <Button
+                android:id="@+id/addcartbttn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@color/coloryellowbuttontextfield"
+                android:text="View Detail"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/code" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

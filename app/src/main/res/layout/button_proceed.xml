@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/loginbttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/coloryellowbuttontextfield"
+        android:text="Continue"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loginprogress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:indeterminateTint="@color/coloryellowbuttontextfield"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/loginbttn"
+        app:layout_constraintEnd_toEndOf="@+id/loginbttn"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/loginbttn" />
+
+    <Button
+        android:id="@+id/submitbbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/coloryellowbuttontextfield"
+        android:text="Submit Cart"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbttn" />
+
+    <ProgressBar
+        android:id="@+id/submitprogress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:indeterminateTint="@color/coloryellowbuttontextfield"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/submitbbtn"
+        app:layout_constraintEnd_toEndOf="@+id/submitbbtn"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/submitbbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

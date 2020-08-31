@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/main_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/shimmer_profile"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraint"
+        android:layout_height="match_parent">
+
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true">
+
+        </com.smarteist.autoimageslider.SliderView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tile"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titles"
+            app:layout_constraintTop_toTopOf="@+id/titles" />
+
+        <TextView
+            android:id="@+id/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Price Code:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSlider" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tile"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titlesf"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toTopOf="@+id/titlesf" />
+
+        <TextView
+            android:id="@+id/titlesf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Code:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titles"
+            app:layout_constraintTop_toBottomOf="@+id/titles" />
+
+        <TextView
+            android:id="@+id/titlesd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Quantity:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titlesf"
+            app:layout_constraintTop_toBottomOf="@+id/titlesf" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tile"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titlesd"
+            app:layout_constraintStart_toStartOf="@+id/code"
+            app:layout_constraintTop_toBottomOf="@+id/titlesf" />
+
+        <TextView
+            android:id="@+id/titlesff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Color:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titlesd"
+            app:layout_constraintTop_toBottomOf="@+id/titlesd" />
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tile"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titlesff"
+            app:layout_constraintStart_toStartOf="@+id/qty"
+            app:layout_constraintTop_toBottomOf="@+id/titlesd" />
+
+        <TextView
+            android:id="@+id/titxbxfles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Polish:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titlesff"
+            app:layout_constraintTop_toBottomOf="@+id/titlesff" />
+
+        <TextView
+            android:id="@+id/polish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="tile"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titxbxfles"
+            app:layout_constraintStart_toStartOf="@+id/color"
+            app:layout_constraintTop_toBottomOf="@+id/titlesff" />
+
+        <Button
+            android:id="@+id/addcart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:background="@color/coloryellowbuttontextfield"
+            android:text="ADD TO CART"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titxbxfles" />
+
+        <ProgressBar
+            android:id="@+id/addprogress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/coloryellowbuttontextfield"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/addcart"
+            app:layout_constraintTop_toTopOf="@+id/addcart"
+            app:layout_constraintBottom_toBottomOf="@+id/addcart"
+            app:layout_constraintStart_toStartOf="@+id/addcart"
+            tools:layout_editor_absoluteY="678dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+</ScrollView>

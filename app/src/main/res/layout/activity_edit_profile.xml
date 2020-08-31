@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EditProfileActivity">
+        <include android:id="@+id/toolbarlayout"
+            layout="@layout/main_toolbar"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ProductActivity">
+
+        <include
+            layout="@layout/shimmer_profile"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/linearedit"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editNameprofile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/editext_border"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:textColorHint="@color/colordarkgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editEmailprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editmobileprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="Mobile"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/editpasswordprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+            android:id="@+id/editcompanynameprofile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/editext_border"
+            android:hint="Company Name"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:textColorHint="@color/colordarkgray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editgstprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="GST NO"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editaddressprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="Address"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editpincodeprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="Pincode"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editcityprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="City"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <EditText
+                android:id="@+id/editstateprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:hint="State"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <TextView
+                android:id="@+id/editcountryprofile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editext_border"
+                android:text="Country"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/colordarkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </LinearLayout>
+    </FrameLayout>
+    </ScrollView>
+</LinearLayout>

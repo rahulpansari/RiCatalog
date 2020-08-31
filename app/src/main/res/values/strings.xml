@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RICatalog</string>
+    <string name="loginemail">Email/Phone</string>
+    <string name="loginpassword">Password</string>
+    <string name="signupname">Name</string>
+    <string name="signupmobile">Mobile No</string>
+    <string name="signupemail">Email</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

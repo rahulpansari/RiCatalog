@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/rilogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/salutation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Rahul Pansari"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salutation" />
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:id="@+id/cardedit"
+    app:cardCornerRadius="18dp"
+    android:layout_marginTop="3dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/name"
+    app:cardBackgroundColor="@color/coloryellowbuttontextfield"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="@color/whitecolor"
+        android:text="Edit Profile"/>
+</androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nestedrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardedit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/main_toolbar" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/shimmerlayout"
+        layout="@layout/shimmer_main_activity"
+        app:layout_constraintStart_toStartOf="@+id/subcategoryrecycler"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarlayout" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subcategoryrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarlayout" />
+</FrameLayout>
+</LinearLayout>
