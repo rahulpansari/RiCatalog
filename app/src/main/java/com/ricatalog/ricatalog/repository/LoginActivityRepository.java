@@ -30,7 +30,7 @@ public class LoginActivityRepository {
     }
     public void registerUser(Map<String,String> map)
     {
-       Call<Registeration> call= NetworkCall.getRetrofit().create(RetrofitApi.class).registerUser(map.get("name"),map.get("mobile"),map.get("email"),map.get("place"),map.get("company"));
+       Call<Registeration> call= NetworkCall.getRetrofit().create(RetrofitApi.class).registerUser(map.get("name"),map.get("phone"),map.get("email"),map.get("place"),map.get("company"));
         call.enqueue(new Callback<Registeration>() {
             @Override
             public void onResponse(Call<Registeration> call, Response<Registeration> response) {

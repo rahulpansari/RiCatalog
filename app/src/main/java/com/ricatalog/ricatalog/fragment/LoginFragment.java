@@ -32,7 +32,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LoginFragment extends BottomSheetDialogFragment {
+public class
+
+LoginFragment extends BottomSheetDialogFragment {
     @BindView(R.id.editmobilelogin)
     EditText editphone;
     @BindView(R.id.editpasswordlogin)

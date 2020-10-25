@@ -21,7 +21,7 @@
 
     <include
         layout="@layout/shimmer_profile"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
          />
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tile"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="16sp"
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tile"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="16sp"
@@ -131,7 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tile"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="16sp"
@@ -159,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tile"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="16sp"
@@ -187,7 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="tile"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="16sp"

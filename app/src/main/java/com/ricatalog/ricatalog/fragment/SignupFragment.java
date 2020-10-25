@@ -1,5 +1,6 @@
 package com.ricatalog.ricatalog.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.ricatalog.ricatalog.R;
+import com.ricatalog.ricatalog.activity.ThanksActivity;
 import com.ricatalog.ricatalog.network.Registeration;
 import com.ricatalog.ricatalog.utils.Utils;
 import com.ricatalog.ricatalog.viewmodel.LoginViewModel;
@@ -76,9 +78,10 @@ public class SignupFragment extends BottomSheetDialogFragment {
                 }
                 else if(registeration!=null)
                 {
-                    if(registeration.getCode().equals("1"))
-                    Utils.showSuccesfulToast(getContext(),getActivity(),"Request Sent For Admin Approval");
-                    else if(registeration.getCode().equals("-1"))
+                    if(registeration.getCode().equals("1")) {
+                        Intent i=new Intent(getActivity(),ThanksActivity.class);
+                        startActivity(i);
+                    }else if(registeration.getCode().equals("-1"))
                         Utils.showErrorToast(getContext(),getActivity(),"Something Went Wrong");
                     else
                         Utils.showSuccesfulToast(getContext(),getActivity(),"User Already Exist !");
@@ -116,9 +119,9 @@ public class SignupFragment extends BottomSheetDialogFragment {
             editname.setError("Name Cant be Empty");
             return false;
         }
-        if(editemail.getText().toString()==null||editemail.getText().toString().isEmpty())
+        if(place.getText().toString()==null||place.getText().toString().isEmpty())
         {
-            editname.setError("Email Cant be Empty");
+            place.setError("Place Cant be Empty");
             return false;
         }
         if(editphone.getText().toString()==null||editphone.getText().toString().isEmpty()||editphone.getText().toString().length()<10)

@@ -141,18 +141,23 @@ public void editProfile(View v)
 {
     Intent i=new Intent(MainActivity.this, EditProfileActivity.class);
     startActivity(i);
+
 }
+    @OnClick(R.id.cardlogout)
+    public void logout(View v)
+    {
+        Utils.getShraredPreferencesEditor(MainActivity.this).clear().apply();
+        Intent i=new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(i);
+        finish();
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
-
         final MenuItem menuItem = menu.findItem(R.id.action_cart);
-
         View actionView = menuItem.getActionView();
         cartvalue = (TextView) actionView.findViewById(R.id.cart_badge);
-
         setupBadge();
-
         actionView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

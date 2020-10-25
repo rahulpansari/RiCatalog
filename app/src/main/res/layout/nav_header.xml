@@ -50,7 +50,7 @@
     android:layout_height="wrap_content"
     app:cardElevation="10dp"
     android:id="@+id/cardedit"
-    app:cardCornerRadius="18dp"
+    app:cardCornerRadius="14dp"
     android:layout_marginTop="3dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +65,26 @@
         android:textColor="@color/whitecolor"
         android:text="Edit Profile"/>
 </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:id="@+id/cardlogout"
+        app:cardCornerRadius="14dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardedit"
+        app:cardBackgroundColor="@color/coloryellowbuttontextfield"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/whitecolor"
+            android:text="LogOut"/>
+    </androidx.cardview.widget.CardView>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/nestedrecycler"
         android:layout_width="match_parent"
@@ -72,6 +92,6 @@
         android:layout_marginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardedit" />
+        app:layout_constraintTop_toBottomOf="@+id/cardlogout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

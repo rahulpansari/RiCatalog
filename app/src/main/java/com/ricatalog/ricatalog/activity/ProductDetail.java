@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -100,6 +101,10 @@ Button addcart;
                     details = productDetail.getGetdatalist();
                     setDetails(0);
                     sliderAdapterExample.setAdapter(productDetail.getGetdatalist());
+                    if(productDetail.getGetdatalist().size()==1) {
+                        sliderView.setInfiniteAdapterEnabled(false);
+
+                    }
                 }
             }
         });
